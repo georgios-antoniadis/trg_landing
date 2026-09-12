@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRG | RAG Test Case Generator</title>
+    <title>T-Rails | Testing on Rails</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
         <div class="container nav-container">
-            <div class="logo">TRG <span>RAG Test Case Generator</span></div>
+            <div class="logo">T-Rails <span>Testing on Rails</span></div>
             <nav>
                 <a href="#features">Features</a>
                 <a href="#screenshots">Screenshots</a>
@@ -22,15 +22,53 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Test case creation tool</h1>
-            <p>TRG reduces the friction of creating test cases by doing the boring lifting for you.</p>
-            <a href="#contact" class="cta-btn">Express your interest</a>
+            <h2>Create, edit, and save your test cases locally. No Internet connection, no API key required.</h2>
+            <!-- <a href="#contact" class="cta-btn">Express your interest</a> -->
+
+            <h3>Start Now!</h3>
+            <div class="console">
+            <code style="color: #f5f5f5; white-space: nowrap; overflow-x: auto;">
+                git clone "https://github.com/georgios-antoniadis/TRG.git"
+            </code>
+            <button onclick="navigator.clipboard.writeText('curl -fsSL https://ollama.com/install.sh | sh')" style="
+                background: transparent;
+                border: none;
+                cursor: pointer;
+                padding: 4px;
+                flex-shrink: 0;
+            ">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f5f5f5" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+            </button>
+            </div>
+            <br>
+            <p style="font-family: Arial, sans-serif; font-size: 14px; color: #333;">
+                Free to try till October 1st! <a href="https://github.com/georgios-antoniadis/TRG" style="color: #333; text-decoration: underline;">See installation instructions</a>
+            </p>
+            <br>
+            <br>
+
+            <!-- <div style="
+                grid grid-cols-3 gap-4 text-sm;
+                align-items: top;
+                gap: 18px;
+                font-size: 18px;
+                color: #333;
+            ">
+                <img src="macos-icon.svg" alt="macOS" width="46" height="46">
+                <img src="linux-icon.svg" alt="Linux" width="46" height="46">
+                <img src="windows-icon.svg" alt="Windows" width="44" height="44">
+                <span>All major platforms supported</span>
+            </div> -->
+
         </div>
     </section>
 
     <section id="whyus">
         <div class="container">
-            <h2 class="section-title">Why Choose TRG?</h2>
+            <h2 class="section-title">Why Choose T-Rails?</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <h3>⚡ Fast consistency</h3>
@@ -54,7 +92,7 @@
             <div class="screenshot-gallery">
                 
                 <div class="screenshot-wrapper">
-                    <img src="screenshots/landing.png" alt="TRG Main Dashboard Placeholder">
+                    <img src="screenshots/landing.png" alt="T-Rails Main Dashboard Placeholder">
                     <div class="screenshot-info">
                         <h4>Launcher</h4>
                         <p>Pick the right model for the task.</p>
@@ -120,7 +158,7 @@
     </section>
 
     <footer>
-        TRG - Automated Test Case Generator &copy; 2026
+        T-Rails - Testing on Rails &copy; 2026
     </footer>
 
     <script src="scripts.js"></script>
